@@ -10,18 +10,10 @@ public class Test_prog
 
 	WebDriver driver;
 	@Test
-	@Parameters({"browser"})
-	public void run_method(String br) throws Exception
+	
+	public void run_method() throws Exception
 	{
-		if(br.matches("ie"))
-		{
-		System.setProperty("webdriver.ie.driver","c:\\IEDriverServer.exe");
-		driver=new InternetExplorerDriver();
-		}
-		if(br.matches("firefox"))
-		{
-			driver=new FirefoxDriver();
-		}
+		driver=new FirefoxDriver();
 		
 		Home hm=new Home(driver);
 		hm.validate_HomeLinks();

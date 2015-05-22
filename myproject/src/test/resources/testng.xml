@@ -3,6 +3,7 @@
 <classes>
 <class name="P1.Test_prog" />
 <methods>
+
 <include name="run_method" />
 </methods>
 </classes>
