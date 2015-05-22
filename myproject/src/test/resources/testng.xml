@@ -1,4 +1,4 @@
-<suite name="Yahoo_suite" >
+<suite name="Yahoo_suite">
 <test name="test1">
 <classes>
 <class name="P1.Test_prog" />
