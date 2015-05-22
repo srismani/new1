@@ -24,7 +24,7 @@ public class Home
 	  open_url();
 	  Thread.sleep(5000);
 	  String exlinks[]={"About Mail","Features","Get the App","Help"};
-	  WebElement hmlink=driver.findElement(By.xpath("//*[@class='Fl-end Mend-10 Grid Whs-nw My-6']"));
+	  WebElement hmlink=driver.findElement(By.xpath("//*[@class='Fl(end) Mend(10px) Lts(-0.31em) Tren(os) Whs(nw) My(6px)']"));
 	  List<WebElement> lst=hmlink.findElements(By.tagName("a"));
 	  
 	  int cnt=0;
