@@ -18,6 +18,7 @@ public class Home
   {
 	  driver.manage().window().maximize();
 	  driver.get("http://www.yahoomail.com");
+	System.out.println("updated code");
 	 
 	  
 	  
