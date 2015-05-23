@@ -11,17 +11,21 @@ public class Home
 {
   WebDriver driver;
   public Home(WebDriver driver)
-  {
+  { 
 	  this.driver=driver;
   }
   public void open_url()
   {
 	  driver.manage().window().maximize();
 	  driver.get("http://www.yahoomail.com");
+	 
+	  
+	  
   }
   public void validate_HomeLinks() throws Exception
   {
 	  open_url();
+	  
 	  Thread.sleep(5000);
 	  String exlinks[]={"About Mail","Features","Get the App","Help"};
 	  WebElement hmlink=driver.findElement(By.xpath("//*[@class='Fl(end) Mend(10px) Lts(-0.31em) Tren(os) Whs(nw) My(6px)']"));
@@ -30,7 +34,7 @@ public class Home
 	  int cnt=0;
 	  Reporter.log("===========Validating Links in Home Page===========");
 	  for(WebElement lnk : lst)
-	  {
+	  { 
 		 if(exlinks[cnt].matches(lnk.getText().trim()))
 			 Reporter.log("<font color='green'><b>Link is matching </b></font>"+exlinks[cnt]);
 		 else
